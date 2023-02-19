@@ -6,6 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 r = requests.get(start_url)
 soup = BeautifulSoup(r.text, 'html.parser')
+print(soup.find('title').get_text().strip())
+
 cipher_tag = soup.find('font', attrs={'color':'#f000f0'})
 cipher_text = cipher_tag.get_text().strip()
 ord_a = ord('a')
