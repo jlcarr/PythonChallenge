@@ -26,3 +26,9 @@ Solutions to Python Challenge problems in Python3.
 - **Solution**: As the hint says, we're looking for examples of lowercase letters surrounded by exactly 3 upper-case letters in the ciphertext in the comments. As the title hints at, we can use Python's `re` library to do this. A working regex is `r'[a-z][A-Z]{3}([a-z])[A-Z]{3}[a-z]'`. Watch out for the cases of more than 3 upper-case letters present. 
 - **Answer**: http://www.pythonchallenge.com/pc/def/linkedlist.html
 
+### Level 4
+- **Title**: follow the chain
+- **Url**: http://www.pythonchallenge.com/pc/def/linkedlist.html
+- **Solution**: The hmtl page directs to a php page, where we have an image which links to the same page with a url query parameter, `nothing=12345` and there's a comment which alludes to following the "nothings" at most 400 times. Following the link with the query parameter we are are told what the "next nothing is", which we can use to update the query parameter. Repeating this in an automated loop until we finall reach a page saying `peak.html` which is our answer.
+- **Answer**: http://www.pythonchallenge.com/pc/def/peak.html
+
