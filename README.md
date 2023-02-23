@@ -29,6 +29,12 @@ Solutions to Python Challenge problems in Python3.
 ### Level 4
 - **Title**: follow the chain
 - **Url**: http://www.pythonchallenge.com/pc/def/linkedlist.html
-- **Solution**: The hmtl page directs to a php page, where we have an image which links to the same page with a url query parameter, `nothing=12345` and there's a comment which alludes to following the "nothings" at most 400 times. Following the link with the query parameter we are are told what the "next nothing is", which we can use to update the query parameter. Repeating this in an automated loop until we finall reach a page saying `peak.html` which is our answer.
+- **Solution**: The html page directs to a php page, where we have an image which links to the same page with a url query parameter, `nothing=12345` and there's a comment which alludes to following the "nothings" at most 400 times. Following the link with the query parameter we are are told what the "next nothing is", which we can use to update the query parameter. Repeating this in an automated loop until we finall reach a page saying `peak.html` which is our answer.
 - **Answer**: http://www.pythonchallenge.com/pc/def/peak.html
+
+### Level 5
+- **Title**: peak hell
+- **Url**: http://www.pythonchallenge.com/pc/def/peak.html
+- **Solution**: In the html there is a tag called "peakhell" with a `src` attributes pointing to banner.p which is a file we can download. The hint text says "pronounce it" and "peakhell" sounds like "pickle" a popular python serialization library, whose output files usually use the .p exentsion. If we unpickle the file we get a list of lists and in each inner list we have tuples of characters and numbers. if we repeat each character the number of times and concatenate them all together we get an ascii art saying "channel" which is our answer.
+- **Answer**: http://www.pythonchallenge.com/pc/def/channel.html
 
