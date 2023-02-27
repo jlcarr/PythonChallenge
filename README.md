@@ -38,3 +38,9 @@ Solutions to Python Challenge problems in Python3.
 - **Solution**: In the html there is a tag called "peakhell" with a `src` attributes pointing to banner.p which is a file we can download. The hint text says "pronounce it" and "peakhell" sounds like "pickle" a popular python serialization library, whose output files usually use the .p exentsion. If we unpickle the file we get a list of lists and in each inner list we have tuples of characters and numbers. if we repeat each character the number of times and concatenate them all together we get an ascii art saying "channel" which is our answer.
 - **Answer**: http://www.pythonchallenge.com/pc/def/channel.html
 
+### Level 6
+- **Title**: now there are pairs
+- **Url**: http://www.pythonchallenge.com/pc/def/channel.html
+- **Solution**: The image is of a zipper, so try changing the url to end in .zip instead of .html. Download this .zip, then extract the contents, which is a folder with a lot of numbered .txt files and a readme.txt giving a starting "nothing" to follow. Follow the sequence of .txt files in the same "next nothing" style, until we get to a .txt saying "Collect the comments." so taking the zip format's comment for each internal file gives a sequence of bytes, which decoded to ascii makes a large ascii art saying "hockey" but using the letters "oxygen" which is our answer.
+- **Answer**: http://www.pythonchallenge.com/pc/def/oxygen.html
+
