@@ -44,3 +44,9 @@ Solutions to Python Challenge problems in Python3.
 - **Solution**: The image is of a zipper, so try changing the url to end in .zip instead of .html. Download this .zip, then extract the contents, which is a folder with a lot of numbered .txt files and a readme.txt giving a starting "nothing" to follow. Follow the sequence of .txt files in the same "next nothing" style, until we get to a .txt saying "Collect the comments." so taking the zip format's comment for each internal file gives a sequence of bytes, which decoded to ascii makes a large ascii art saying "hockey" but using the letters "oxygen" which is our answer.
 - **Answer**: http://www.pythonchallenge.com/pc/def/oxygen.html
 
+### Level 7
+- **Title**: smarty
+- **Url**: http://www.pythonchallenge.com/pc/def/oxygen.html
+- **Solution**: The image shown has a sequence of grey squares along the middle of various shades. Taking the byte values of the shades, and converting ascii we get a message "smart guy, you made it. the next level is [105, 110, 116, 101, 103, 114, 105, 116, 121]". Converting the last array into ascii again gives the answer "integrity".
+- **Answer**: http://www.pythonchallenge.com/pc/def/integrity.html
+
